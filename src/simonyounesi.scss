@@ -1,0 +1,18 @@
+@import 'App.scss';
+@import 'index.scss';
+
+
+// Variables
+$color_one: #111C4E;
+$color_two: #1B998B;
+$color_three: #FFAE03;
+$color_four: #EE6352;
+$color_five: #F5EFED;
+
+$bgcolor: $color_one;
+$default_text_color: $color_five;
+
+body {
+    background-color: $bgcolor;
+    color: $default_text_color;
+}
