@@ -2,15 +2,23 @@
 @import 'index.scss';
 
 
-// Variables
-$color_one: #111C4E;
-$color_two: #1B998B;
-$color_three: #FFAE03;
-$color_four: #EE6352;
-$color_five: #F5EFED;
+// # Personal Styles
+//     Contents:
+//       1. Color Scheme
+
+// 1. Color Scheme
+$color_one: #1A535C;
+$color_two: #4ECDC4;
+$color_three: #F7FFF7;
+$color_four: #FF6B6B;
+$color_five: #FFE66D;
 
 $bgcolor: $color_one;
 $default_text_color: $color_five;
+
+.my_greeting {
+    color: $color_two;
+}
 
 body {
     background-color: $bgcolor;
