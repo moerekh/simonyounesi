@@ -20,7 +20,21 @@ $default_text_color: $color_five;
     color: $color_two;
 }
 
+li.list-group-item {
+    background-color: inherit;
+}
+
 body {
     background-color: $bgcolor;
     color: $default_text_color;
+}
+
+span {
+    &.employer_name {
+        font-weight: bold;
+    }
+    &.job_dates {
+        display: block;
+        margin-bottom: 20px;
+    }
 }

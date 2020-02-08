@@ -5,7 +5,10 @@ const my_info = {
         {
             "employer": "Harvard Medical School - Gygi Lab",
             "title": "Frontend Engineer",
+            "city": "Cambridge",
+            "state": "MA",
             "duration": {
+                "present": true,
                 "start": {
                     "month": "Januray",
                     "year": 2017
@@ -15,6 +18,7 @@ const my_info = {
                     "year": false
                 }
             },
+            "description": "Gygi Lab at Harvard Medical School specializes in proteomics, the study of proteins using many mass spectrometers. Their data analysis software is one of the most used and respected in the entire proteomics community. My time with them has allowed me to work closely with it.",
             "duties": [
                 "Collaborated remotely with lab scientists to build requested app modules and features that allowed them to publish their findings.",
                 "Created tools that collected files and data to deliver to the user that allowed for swift paper submissions to publishers.",
@@ -31,7 +35,10 @@ const my_info = {
         {
             "employer": "TextMarks",
             "title":"Frontend Developer",
+            "city": "Pasadena",
+            "state": "CA",
             "duration": {
+                "present": false,
                 "start": {
                     "month": "November",
                     "year":  2013
@@ -41,6 +48,7 @@ const my_info = {
                     "year": 2016
                 }
             },
+            "description": "TextMarks is an MLM SMS messaging platform.",
             "duties": [
                 "Helped create a detailed Kanban method of task tracking with Asana.",
                 "Improved TextMarks services and page design by introducing modern frameworks such as Twitter Bootstrap.",
@@ -62,6 +70,7 @@ const my_info = {
             "title": "Graphic Designer / Frontend Developer",
             "duration": {
                 "start": {
+                    "present": false,
                     "month": "November",
                     "year": 2010
                 },
@@ -70,6 +79,9 @@ const my_info = {
                     "year": 2013
                 }
             },
+            "city": "Camarillo",
+            "state": "CA",
+            "description": "SMK-Link, formerly Interlink Electronics is an electronics manufacturer that specializes in computer input devices and presentation remote controls. During my employment the Gyration brand was also acquired which was one of the first in the industry to build gyroscopic sensors for use in their products.",
             "duties": [
                 "Instrumental in re-launching the SMK-Link & Gyration brands with new retail packaging, user guides, magazine ads, e-blasts, newsletters, websites, tradeshow graphics, and sales collateral.",
                 "Created E-Commerce site using Shopify.",
@@ -82,8 +94,9 @@ const my_info = {
             "employer": "Myself",
             "title": "Freelance Designer / Consultant / Engineer",
             "duration": {
+                "present": true,
                 "start": {
-                    "month": false,
+                    "month": "January",
                     "year": 2013
                 },
                 "end": {
