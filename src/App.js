@@ -19,18 +19,6 @@ class Intro extends React.Component {
   }
 }
 
-class ListGroupInfo extends React.Component {
-  render() {
-    let employer=this.props.employer,
-        city=this.props.city,
-        state=this.props.state,
-        jobTitle=this.props.jobTitle;
-    return(
-      <li class="list-group-item">{employer}</li>
-    )
-  }
-}
-
 class ListGroupItems extends React.Component {
   render() {
     let duty = this.props.job.duties.map((desc, j) => (
@@ -46,10 +34,10 @@ class ListGroupItems extends React.Component {
         {(this.props.job.duration.present)? " - Present" : 
         (this.props.job.duration.end.month)? " - " + this.props.job.duration.end.month + " " + this.props.job.duration.end.year : ''}
         </span>
-        <span className="job_title">{this.props.job.title}</span>
+
         <span className="employer_description">{this.props.job.description}</span>
         <hr />
-
+        <span className="job_title">{this.props.job.title}</span>
         <ul>
           {duty}
         </ul>
@@ -72,6 +60,9 @@ class Employment extends React.Component {
         <div className="row">
           <div className="col">
             <ul className="list-group">
+              <li class="list-group-item">
+                <span className="work_history_title">Work History</span>
+              </li>
               {listgroupitems}
             </ul>
           </div>
