@@ -73,6 +73,38 @@ class Employment extends React.Component {
   }
 }
 
+class Degree extends React.Component {
+  render() {
+    return(
+      <div id={"edu-" + this.props.edu_key}>
+        <p><span className="degree">{this.props.edu.degree}</span> | <span className="school">{this.props.edu.school}</span> | <span className="graduated">{this.props.edu.graduated}</span></p>
+      </div>
+    )
+  }
+}
+
+class Education extends React.Component {
+  render() {
+    let education = my_info.education.map((edu, i) => (
+      <Degree
+        key={i}
+        edu={edu}
+        edu_key={i}
+      ></Degree>
+    ))
+    return(
+      <div className="container">
+        <div className="row education_row">
+          <div className="col">
+            <h2 className="education_header">Education</h2>
+            {education}
+          </div>
+        </div>
+      </div>
+    )
+  }
+}
+
 function App() {
   return (
     <div className="App">
@@ -80,6 +112,7 @@ function App() {
       <main id="fullscreen">
         <Intro></Intro>
         <Employment></Employment>
+        <Education></Education>
       </main>
       <footer></footer>
     </div>

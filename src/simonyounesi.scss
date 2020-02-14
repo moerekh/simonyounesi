@@ -61,6 +61,7 @@ main#fullscreen {
 
             h2.jobs_row_title {
                 margin-bottom: 20vh;
+                color: $color_two;
             }
 
             .job_row {
@@ -69,6 +70,13 @@ main#fullscreen {
                 &:last-child {
                     margin-bottom: 0vh;
                 }
+            }
+        }
+
+        .education_row {
+
+            h2.education_header {
+                color: $color_two;
             }
         }
     }

@@ -114,6 +114,13 @@ const my_info = {
             ]
         }
     ],
+    "education": [
+        {
+            "degree": "BA: Arts",
+            "graduated": "2009",
+            "school": "California State University, Northridge"
+        }
+    ],
     "skills": [
         {
             "name": "",
