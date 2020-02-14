@@ -123,8 +123,48 @@ const my_info = {
     ],
     "skills": [
         {
-            "name": "",
+            "name": "HTML",
             "score": 0
+        },
+        {
+            "name": "CSS",
+            "score": 0
+        },
+        {
+            "name": "JavaScript",
+            "score": 0
+        },
+        {
+            "name": "PHP",
+            "score": 0
+        },
+        {
+            "name": "Python",
+            "score": 0
+        },
+        {
+            "name": "MySQL",
+            "score": 0
+        },
+        {
+            "name": "ReactJS",
+            "score": 0
+        },
+        {
+            "name": "JQuery",
+            "score": 0
+        },
+        {
+            "name": "Adobe Photoshop",
+            "score": 9
+        },
+        {
+            "name": "Adobe Illustrator",
+            "score": 9
+        },
+        {
+            "name": "Adobe InDesign",
+            "score": 9
         }
     ]
 }

@@ -105,6 +105,36 @@ class Education extends React.Component {
   }
 }
 
+class SkillInfo extends React.Component {
+  render() {
+    return(
+    <p>{this.props.skill.name} | {this.props.skill.score}</p>
+    )
+  }
+}
+
+class Skills extends React.Component {
+  render() {
+    let skills = my_info.skills.map((skill, i) => (
+      <SkillInfo
+        key={i}
+        skill={skill}
+        skill_key={i}
+      ></SkillInfo>
+    ))
+    return(
+      <div className="container">
+        <div className="row skills_row">
+          <div className="col">
+            <h2 className="skills_header">Skills</h2>
+            {skills}
+          </div>
+        </div>
+      </div>
+    )
+  }
+}
+
 function App() {
   return (
     <div className="App">
@@ -113,6 +143,7 @@ function App() {
         <Intro></Intro>
         <Employment></Employment>
         <Education></Education>
+        <Skills></Skills>
       </main>
       <footer></footer>
     </div>
