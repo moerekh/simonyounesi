@@ -6,7 +6,7 @@ class Intro extends React.Component {
   render() {
     return(
       <div className="container">
-        <div className="row">
+        <div id="intro" className="row intro_row">
           <div className="col">
             <h1 className="my_greeting">
               Hi, I'm { my_info.name }.
@@ -19,7 +19,7 @@ class Intro extends React.Component {
   }
 }
 
-class ListGroupItems extends React.Component {
+class JobSection extends React.Component {
   render() {
     let duty = this.props.job.duties.map((desc, j) => (
       <li key={j}>
@@ -28,7 +28,7 @@ class ListGroupItems extends React.Component {
     ))
 
     return(
-      <div id={"job-" + this.props.job_key} className="row">
+      <div id={"job-" + this.props.job_key} className="row job_row">
         <hr />
         <div className="col">
           <span className="employer_name">{this.props.job.employer}</span>
@@ -52,19 +52,20 @@ class ListGroupItems extends React.Component {
 
 class Employment extends React.Component {
   render() {
-    let listgroupitems = my_info.employment_history.map((job, i) => (
-      <ListGroupItems
+    let jobs = my_info.employment_history.map((job, i) => (
+      <JobSection
         key={i}
         job={job}
         job_key={i}
       >
-      </ListGroupItems>
+      </JobSection>
     ))
     return(
       <div className="container">
-        <div className="row">
+        <div className="row jobs_row">
           <div className="col">
-            {listgroupitems}
+            <h2 className="jobs_row_title">My Work Experience</h2>
+            {jobs}
           </div>
         </div>
       </div>

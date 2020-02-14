@@ -1,7 +1,6 @@
 @import 'App.scss';
 @import 'index.scss';
 @import "~bootstrap/scss/bootstrap.scss";
-@import "~fullpage.js/dist/fullpage.css";
 
 
 // # Personal Styles
@@ -45,18 +44,30 @@ span {
 }
 
 main#fullscreen {
+    height: 100vh;
+    
     .container {
-        // height: 100vh;
-
         .row {
             position: relative;
-            margin-top: 40vh;
         }
 
-        &:last-child {
-            .row {
+        .intro_row {
+            margin-top: 50vh;
+            margin-bottom: 50vh;
+        }
+
+        .jobs_row {
+            border-left: 2px solid $color_two;
+
+            h2.jobs_row_title {
+                margin-bottom: 20vh;
+            }
+
+            .job_row {
+                margin-bottom: 20vh;
+
                 &:last-child {
-                    margin-bottom: 40vh;
+                    margin-bottom: 0vh;
                 }
             }
         }
