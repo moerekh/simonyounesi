@@ -43,3 +43,22 @@ span {
         display: block;
     }
 }
+
+main#fullscreen {
+    .container {
+        // height: 100vh;
+
+        .row {
+            position: relative;
+            margin-top: 40vh;
+        }
+
+        &:last-child {
+            .row {
+                &:last-child {
+                    margin-bottom: 40vh;
+                }
+            }
+        }
+    }
+}
